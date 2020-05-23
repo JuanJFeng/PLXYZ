@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>Carlo Giardina</title>
+<link rel="stylesheet" type="text/css" href="/CGWWW/css/main.css">
+<link rel="stylesheet" href="/CGWWW/css/swiper.min.css">
+<link rel="shortcut icon" type="image/png" href="/favicon.png">
+
+<!-- SCSS, baby -->
+<link rel="stylesheet" href="/CGWWW/css/screen.css">
+
+</head>
+
+<body>
+	<div id="page-container">
+		<div id="content-wrap">
+			<header>
+				<nav>
+    <div class="nav nav-top">
+
+        <div class="nav-left">
+            <div class="dropdown">
+                <a href="/CGWWW/" class="">
+                    Carlo Giardina
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="dropdown">
+                <p>Works</p>
+                <div class="dropdown-content right-side"> 
+                    <br>
+                    
+                        
+                            <div>
+                                <a href="/CGWWW/work01/">Work-01</a>
+                            </div>
+                        
+                    
+                        
+                            <div>
+                                <a href="/CGWWW/work02/">Work-02</a>
+                            </div>
+                        
+                    
+                        
+                            <div>
+                                <a href="/CGWWW/work03/">Work-03</a>
+                            </div>
+                        
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+
+
+
+			</header>
+			<div class="nav-sotto">
+
+</div>
+
+<div class="container-article">
+
+</div>
+
+
+		</div>
+		<footer>
+			<nav>
+    <div class="nav nav-bottom">
+        
+    </div>
+</nav>
+
+
+
+
+		</footer>
+	</div>
+
+<!-- JS -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="/CGWWW/assets/js/swiper.min.js"></script>
+
+<!-- viewport units on mobile -->
+<script>
+	window.addEventListener('resize', () => {
+		let vh = window.innerHeight * 0.01;
+  		document.documentElement.style.setProperty('--vh', `${vh}px`);
+	});
+</script>
+
+<!-- swiper slider -->
+<script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+		spaceBetween: 10,
+		slidesPerView: 1,
+		loop: true,
+		freeMode: true,
+		effect: 'fade',
+		fadeEffect: { crossFade: true },
+		speed: 20,
+		loopedSlides: 12, // looped slides should be the same!!!
+		watchSlidesVisibility: true, // slides that in viewport will have additional visible class
+		watchSlidesProgress: true, // enable the 'proress' property on each slide
+    });
+
+	var galleryTop = new Swiper('.gallery-top', {
+		loop:true,
+		freeMode: true,
+		mousewheel: true,
+		keyboard: true,
+		loopedSlides: 12, // looped slides should be the same!!!
+		thumbs: {
+			swiper: galleryThumbs,
+		},
+    });
+</script>
+
+<!-- smooth scroll 
+<script>
+	function onMouseWheel(e) {
+		console.log(e);
+		clearTimeout($.data(this, 'timer'));
+
+		$(".swiper-wrapper").addClass('mousewheel');
+
+		$.data(this, 'timer', setTimeout( function () {
+			$(".swiper-wrapper").removeClass('mousewheel')
+
+		}, 250));
+	};
+	window.addEventListener( 'mousewheel', onMouseWheel, false )
+	window.addEventListener( 'DOMMouseScroll', onMouseWheel, false )
+</script>
+-->
+
+</body>
+</html>

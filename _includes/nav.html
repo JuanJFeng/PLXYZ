@@ -1,0 +1,32 @@
+<nav>
+    <div class="nav {{include.navclass}}">
+
+        <div class="nav-left">
+            <div class="dropdown">
+                <a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">
+                    Carlo Giardina
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="dropdown">
+                <p>Works</p>
+                <div class="dropdown-content right-side"> 
+                    <br>
+                    {% for process-post in site.categories.post %}
+                        {% if process-post.type contains "post" %}
+                            <div>
+                                <a href="{{site.baseurl}}{{process-post.url}}">{{process-post.title}}</a>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+
+

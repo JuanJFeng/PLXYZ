@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="container-article">
+    <div class="article-title">
+
+        <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+
+                {% for image in site.static_files %}
+                    {% if image.path contains 'homepage-desktop' %}
+                        <div class="swiper-slide">
+                            <img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            
+            </div>
+        </div>
+
+        <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+
+                {% for member in site.data.members %}
+                    <div class="swiper-slide">
+                        <p>{{ member.name }}</p>
+                    </div>
+                {% endfor %}
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
