@@ -7,7 +7,7 @@ layout: default
 
         {% for image in site.static_files %}
             {% if image.path contains 'homepage' %}
-                <div class="frame-homepage">
+                <div class="frame-homepage" id="bg-color1">
                     <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
                 </div>
             {% endif %}
