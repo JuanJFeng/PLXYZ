@@ -31,7 +31,25 @@
 			<div class="container-article">
     <div class="article-title">
 
-    
+        
+            
+                <div class="frame-homepage">
+                    <img src="/CGWWW/assets/images/homepage/home-pl" alt="image" />
+                </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
 
     </div>
 </div>
@@ -66,6 +84,18 @@
 		let vh = window.innerHeight * 0.01;
   		document.documentElement.style.setProperty('--vh', `${vh}px`);
 	});
+</script>
+
+<script>
+	function random_bg_color() {
+		var x = Math.floor(Math.random() * 256);
+		var y = Math.floor(Math.random() * 256);
+		var z = Math.floor(Math.random() * 256);
+		var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+		console.log(bgColor);
+		document.body.style.background = bgColor;
+	}
+	random_bg_color();
 </script>
 
 

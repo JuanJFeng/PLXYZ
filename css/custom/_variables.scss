@@ -189,35 +189,6 @@ header {
 	}
 }
 
-// navigation dropdown
-.dropdown {
-	position: relative;
-	display: inline-block;
-}
-
-.dropdown-content {
-	display: none;
-	position: absolute;
-	min-width: 160px;
-	z-index: 1;
-
-	&.right-side {
-		right: 0;
-	}
-
-	a:hover {
-		text-decoration: underline !important;
-	}
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-
-.dropdown:hover {
-	text-decoration: underline;
-}
-
 // custom-bootstrap
 .row {
 	margin: 0 -$img-padding-desktop !important;
@@ -278,4 +249,23 @@ header {
 			width: 100%;
 		}
 	}
+}
+
+// homepage
+.frame-homepage {
+	width: 100vw; 
+	height: 100vh; 
+	display: inline-block;
+	position: relative;
+
+	img {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 15vw;
+	}
+
 }
